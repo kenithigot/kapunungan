@@ -69,5 +69,5 @@ select:focus[data-flux-control] {
     @apply size-4;
 } */
 body {
-  font-family: 'Michroma', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
