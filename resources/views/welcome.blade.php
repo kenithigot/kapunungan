@@ -15,12 +15,9 @@
 </head>
 
 <body>
-    <img src="{{ asset('images/bg-vortex.svg') }}" alt="background vortex"
-        class="absolute inset-0 w-full h-screen object-cover z-[-1]">
-    <!-- ========== HEADER ========== -->
     <header class="sticky top-0 inset-x-0 flex flex-wrap md:justify-start md:flex-nowrap z-2 w-full text-sm">
         <nav
-            class="mt-4 relative max-w-4xl w-full bg-white rounded-[24px] mx-2 flex flex-wrap md:flex-nowrap items-center justify-between p-1 ps-4 md:py-0 sm:mx-auto">
+            class=" border-b-1 border-blue-400 mt-4 relative max-w-4xl w-full bg-white rounded-[24px] mx-2 flex flex-wrap md:flex-nowrap items-center justify-between p-1 ps-4 md:py-0 sm:mx-auto">
             <div class="flex items-center">
                 <!-- Logo -->
                 <a class="flex-none rounded-md text-xl inline-block font-semibold focus:outline-hidden focus:opacity-80"
@@ -70,8 +67,8 @@
                 aria-labelledby="hs-navbar-header-floating-collapse">
                 <div
                     class="text-base flex flex-col md:flex-row md:items-center md:justify-end gap-2 md:gap-3 mt-3 md:mt-0 py-2 md:py-0 md:ps-7">
-                    <a class="py-0.5 md:py-3 px-4 md:px-1 font-medium text-gray-500 hover:text-gray-800 focus:text-gray-800 focus:outline-hidden"
-                        href="#" aria-current="page">Home</a>
+                    <a class="py-0.5 md:py-3 px-4 md:px-1 text-gray-500 hover:text-gray-800 focus:text-gray-800 focus:outline-hidden"
+                        href="#">Home</a>
                     <a class="py-0.5 md:py-3 px-4 md:px-1 text-gray-500 hover:text-gray-800 focus:text-gray-800 focus:outline-hidden"
                         href="#">Announcement</a>
                     <a class="py-0.5 md:py-3 px-4 md:px-1 text-gray-500 hover:text-gray-800 focus:text-gray-800 focus:outline-hidden"
@@ -90,16 +87,16 @@
     <div class="relative overflow-hidden">
         <div class="max-w-[90rem] mx-auto px-4 sm:px-6 lg:px-8 py-8">
             <div class="max-w-2xl text-center mx-auto">
-                <h1 class="block text-3xl font-bold text-white sm:text-4xl md:text-6xl/18 tracking-wide">Kapunungan:
-                    <span class="text-blue-400">United</span> in Compassion
+                <h1 class="block text-3xl font-bold text-gray-800 sm:text-4xl md:text-6xl/18 tracking-wide">Kapunungan:
+                    <span class="text-blue-400">United</span> in <span class="text-blue-400">Compassion</span>
                 </h1>
-                <p class="mt-5 text-xl text-white font-semibold tracking-wider">A Community that Cares. A Commitment
+                <p class="mt-5 text-xl text-gray-800 font-semibold tracking-wider">A Community that Cares. A Commitment
                     that Lasts.
                 </p>
             </div>
 
             <div class="mt-10 relative max-w-5xl mx-auto">
-                <div class="w-full object-cover h-96 sm:h-120 bg-no-repeat bg-center bg-cover rounded-xl"
+                <div class="border border-violet-300 w-full object-cover h-96 sm:h-120 bg-no-repeat bg-center bg-cover rounded-xl"
                     style="background-image: url('{{ asset('images/bg-banner.jpg') }}');">
                 </div>
                 <div class="absolute inset-0 size-full">
@@ -131,13 +128,13 @@
 
     <!-- Hero -->
     <div class="overflow-hidden">
-        <div class="max-w-7xl mx-auto px-4 xl:px-0 pt-0 sm:pt-16">
+        <div class="max-w-7xl mx-auto px-4 xl:px-0 pt-0 ">
             <h1
-                class="font-semibold text-white sm:text-gray-800 text-4xl md:text-6xl tracking-wide text-center sm:text-start">
+                class="pb-2 sm:pb-0 pt-10 sm:pt-24 font-extrabold text-gray-800 text-2xl sm:text-4xl md:text-6xl tracking-wide text-start ">
                 What is <span class="text-blue-400">Kapunungan?</span>
             </h1>
             <div class="mt-0 max-w-7xl">
-                <p class="text-white sm:text-gray-800 text-base tracking-wider text-center sm:text-start">
+                <p class="text-gray-800 text-sm sm:text-xl tracking-wider text-justify">
                     Kapunungan is a community-based membership organization dedicated to helping families during the
                     most difficult time—the loss of a loved one. We exist to lighten the burden by offering affordable
                     and accessible death care services through solidarity and support.
@@ -149,46 +146,72 @@
 
     <!-- Announcement -->
     <h1
-        class="pt-16 sm:pt-24 font-extrabold text-blue-400 text-4xl md:text-6xl/18 tracking-wide max-w-5xl mx-auto text-center">
+        class="px-4 sm:px-0 pb-2 sm:pb-0 pt-10 sm:pt-24 font-extrabold text-blue-400 text-2xl sm:text-4xl md:text-6xl/18 tracking-wide max-w-5xl mx-auto text-start sm:text-center">
         Announcement
     </h1>
     <div class="max-w-5xl mx-auto px-4 xl:px-0">
-        <p class="text-gray-800 text-base tracking-wider text-center">Stay informed with the latest updates,
+        <p class="text-gray-800 text-sm sm:text-xl tracking-wider text-justify sm:text-center">Stay informed with the
+            latest updates,
             events,
             and important notices from Kapunungan.
             Check this section
             regularly for community announcements and service-related information.</p>
+
+        <div class="text-center py-3 space-x-6">
+            <div class="inline-flex items-center">
+                <span class="size-2 inline-block bg-blue-400 w-4 h-[6px] me-2 rounded-[2px]"></span>
+                <span class="text-gray-800">General Announcement</span>
+            </div>
+            <div class="inline-flex items-center">
+                <span class="size-2 inline-block bg-yellow-400 w-4 h-[6px] me-2 rounded-[2px]"></span>
+                <span class="text-gray-800">Contribution</span>
+            </div>
+            <div class="inline-flex items-center">
+                <span class="size-2 inline-block bg-red-400 w-4 h-[6px] me-2 rounded-[2px]"></span>
+                <span class="text-gray-800">Meeting Schedule</span>
+            </div>
+            <div class="inline-flex items-center">
+                <span class="size-2 inline-block bg-green-400 w-4 h-[6px] me-2 rounded-[2px]"></span>
+                <span class="text-gray-800">Policy Update</span>
+            </div>
+        </div>
     </div>
 
     <!-- FAQ -->
     <div class="max-w-6xl px-2 mx-auto">
-        <div class="hs-accordion-group">
-            <div class="hs-accordion hs-accordion-active:bg-gray-100 rounded-xl p-6"
+        <div class="hs-accordion-group pb-2">
+            <div class="hs-accordion hs-accordion-active:bg-gray-100 rounded-xl pb-2 px-4"
                 id="hs-basic-with-title-and-arrow-stretched-heading-five">
                 <button
-                    class="bg-blue-400 px-2 mb-2 hs-accordion-toggle group py-3 inline-flex items-center justify-between gap-x-3 w-full md:text-lg font-semibold text-start text-white rounded-lg transition focus:outline-hidden"
+                    class="bg-blue-400 px-2 mb-2 hs-accordion-toggle group py-3 inline-flex items-center justify-between gap-x-3 w-full font-semibold text-start text-white rounded-lg transition focus:outline-hidden"
                     aria-expanded="false" aria-controls="hs-basic-with-title-and-arrow-stretched-collapse-five">
-                    <span class="inline-flex items-center gap-x-2">
+                    <div class="inline-flex items-center gap-x-2">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                             stroke-width="1.5" stroke="currentColor" class="size-7">
                             <path stroke-linecap="round" stroke-linejoin="round"
                                 d="M10.34 15.84c-.688-.06-1.386-.09-2.09-.09H7.5a4.5 4.5 0 1 1 0-9h.75c.704 0 1.402-.03 2.09-.09m0 9.18c.253.962.584 1.892.985 2.783.247.55.06 1.21-.463 1.511l-.657.38c-.551.318-1.26.117-1.527-.461a20.845 20.845 0 0 1-1.44-4.282m3.102.069a18.03 18.03 0 0 1-.59-4.59c0-1.586.205-3.124.59-4.59m0 9.18a23.848 23.848 0 0 1 8.835 2.535M10.34 6.66a23.847 23.847 0 0 0 8.835-2.535m0 0A23.74 23.74 0 0 0 18.795 3m.38 1.125a23.91 23.91 0 0 1 1.014 5.395m-1.014 8.855c-.118.38-.245.754-.38 1.125m.38-1.125a23.91 23.91 0 0 0 1.014-5.395m0-3.46c.495.413.811 1.035.811 1.73 0 .695-.316 1.317-.811 1.73m0-3.46a24.347 24.347 0 0 1 0 3.46" />
                         </svg>
-                        How do I get access to a theme I purchased?
-                    </span>
-
-                    <svg class="hs-accordion-active:hidden block shrink-0 size-5 text-white"
-                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <path d="m6 9 6 6 6-6" />
-                    </svg>
-                    <svg class="hs-accordion-active:block hidden shrink-0 size-5 text-white"
-                        xmlns="http://www.w3.org/2000/svg" width="24" height="26" viewBox="0 0 24 24"
-                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <path d="m18 15-6-6-6 6" />
-                    </svg>
+                        <span class="text-sm sm:text-base">How do I get access to a theme I purchased?</span>
+                    </div>
+                    <div class="inline-flex items-center gap-x-2">
+                        <span>
+                            <p class="mt-1 text-[12px] text-white">
+                                Last updated 5 mins ago
+                            </p>
+                        </span>
+                        <svg class="hs-accordion-active:hidden block shrink-0 size-5 text-white"
+                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <path d="m6 9 6 6 6-6" />
+                        </svg>
+                        <svg class="hs-accordion-active:block hidden shrink-0 size-5 text-white"
+                            xmlns="http://www.w3.org/2000/svg" width="24" height="26" viewBox="0 0 24 24"
+                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <path d="m18 15-6-6-6 6" />
+                        </svg>
+                    </div>
                 </button>
                 <div id="hs-basic-with-title-and-arrow-stretched-collapse-five"
                     class="px-2 hs-accordion-content hidden w-full overflow-hidden transition-all duration-300 ease-in-out"
@@ -203,6 +226,7 @@
                 </div>
             </div>
         </div>
+
     </div>
 
     <!-- Organization Officials -->
